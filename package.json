@@ -6,8 +6,7 @@
   "private": "true",
   "type": "module",
   "engines": {
-    "node": "18",
-    "npm": "9"
+    "node": ">=16"
   },
   "scripts": {
     "start": "node ./src/index.js"
@@ -16,6 +15,7 @@
     "@types/ramda": "0.28.20",
     "cheerio": "1.0.0-rc.12",
     "csv-stringify": "6.2.3",
+    "node-fetch": "3.3.0",
     "ramda": "0.28.0",
     "whois": "2.14.0"
   },
