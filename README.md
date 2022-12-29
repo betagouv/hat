@@ -3,6 +3,7 @@
 > CLI tool to retrieve WHOIS information and Fraud Scores from IPs, including anonymized ones.
 
 - [Example](#example)
+  - [Outputs](#outputs)
 - [Usage](#usage)
   - [Multiple IPs](#multiple-ips)
   - [Anonymized IPs](#anonymized-ips)
@@ -27,6 +28,50 @@ $ npm start 35.87.2.149 36.112.45.3
 ✔ Results written in `/home/ivan/Workspace/betagouv/hat/results.csv` and `/home/ivan/Workspace/betagouv/hat/results.json`.
 ```
 
+### Outputs
+
+**results.csv**
+
+```csv
+"ip","score","risk","checkUrl","netrange","cidr",...
+"35.87.2.149","100","very high","https://scamalytics.com/ip/35.87.2.149","35.71.64.0 - 35.127.255.255 35.80.0.0 - 35.95.255.255","35.71.64.0/18, 35.72.0.0/13, 35.96.0.0/11, 35.80.0.0/12, 35.71.128.0/17 35.80.0.0/12",...
+"36.112.45.3","30","medium","https://scamalytics.com/ip/36.112.45.3","","",...
+```
+
+**results.json**
+
+```json
+[
+  {
+    "check": {
+      "ip": "35.87.2.149",
+      "score": "100",
+      "risk": "very high",
+      "checkUrl": "https://scamalytics.com/ip/35.87.2.149"
+    },
+    "lookup": {
+      "netrange": "35.71.64.0 - 35.127.255.255 35.80.0.0 - 35.95.255.255",
+      "cidr": "35.71.64.0/18, 35.72.0.0/13, 35.96.0.0/11, 35.80.0.0/12, 35.71.128.0/17 35.80.0.0/12",
+      "netname": "AT-88-Z AMAZON-ZPDX",
+      // ...
+    }
+  },
+  {
+    "check": {
+      "ip": "36.112.45.3",
+      "score": "30",
+      "risk": "medium",
+      "checkUrl": "https://scamalytics.com/ip/36.112.45.3"
+    },
+    "lookup": {
+      "inetnum": "36.112.0.0 - 36.112.255.255",
+      "netname": "CHINANET-BJ",
+      "country": "CN ZZ CN",
+      //...
+    }
+  }
+]
+```
 
 ## Usage
 
