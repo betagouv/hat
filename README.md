@@ -2,6 +2,32 @@
 
 > CLI tool to retrieve WHOIS information and Fraud Scores from IPs, including anonymized ones.
 
+- [Example](#example)
+- [Usage](#usage)
+  - [Multiple IPs](#multiple-ips)
+  - [Anonymized IPs](#anonymized-ips)
+
+## Example
+
+```sh
+$ npm start 35.87.2.149 36.112.45.3                                               
+
+> hat@0.0.0 start
+> node ./src/index.js 35.87.2.149 36.112.45.3
+
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+✔ CHECK: [35.87.2.149] Fraud Score: 100 / 100 (https://scamalytics.com/ip/35.87.2.149).
+✔ LOOKUP: [35.87.2.149] Country: US, Name: AT-88-Z AMAZON-ZPDX (Amazon Technologies Inc. (AT-88-Z) Amazon.com, Inc. (AMAZO-47)).
+
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+✔ CHECK: [36.112.45.3] Fraud Score: 30 / 100 (https://scamalytics.com/ip/36.112.45.3).
+✔ LOOKUP: [36.112.45.3] Country: CN ZZ CN, Name: CHINANET-BJ (CHINANET Beijing province network).
+
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+✔ Results written in `/home/ivan/Workspace/betagouv/hat/results.csv` and `/home/ivan/Workspace/betagouv/hat/results.json`.
+```
+
+
 ## Usage
 
 You need [Node.js v16+](https://nodejs.org) to run this program.
