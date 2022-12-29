@@ -1,6 +1,6 @@
 # Hat
 
-> CLI tool to retrieve WHOIS information and Fraud Scores from IPs, including anonymized ones.
+> CLI tool to retrieve WHOIS information and Fraud Scores from IPs, including anonymized ones (ending with `.XX`).
 
 - [Example](#example)
   - [Outputs](#outputs)
