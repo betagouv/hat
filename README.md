@@ -4,7 +4,7 @@
 
 ## Usage
 
-You need [Node.js v18](https://nodejs.org) to run this program.
+You need [Node.js v16+](https://nodejs.org) to run this program.
 
 ```sh
 git clone https://github.com/betagouv/hat.git
