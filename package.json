@@ -12,7 +12,7 @@
     "start": "node ./src/index.js"
   },
   "dependencies": {
-    "@types/ramda": "0.28.20",
+    "@types/ramda": "0.28.22",
     "cheerio": "1.0.0-rc.12",
     "csv-stringify": "6.2.3",
     "node-fetch": "3.3.0",
