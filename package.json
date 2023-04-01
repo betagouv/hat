@@ -14,7 +14,7 @@
   "dependencies": {
     "@types/ramda": "0.28.20",
     "cheerio": "1.0.0-rc.12",
-    "csv-stringify": "6.2.3",
+    "csv-stringify": "6.3.0",
     "node-fetch": "3.3.0",
     "ramda": "0.28.0",
     "whois": "2.14.0"
